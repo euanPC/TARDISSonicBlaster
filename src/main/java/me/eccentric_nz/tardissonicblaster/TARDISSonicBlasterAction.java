@@ -48,6 +48,54 @@ public class TARDISSonicBlasterAction implements Runnable {
         }
         plugin.getIsBlasting().remove(uuid);
     }
+      public void blastt(Location Loc) {
+         loc.setY(loc.getY()+1);
+          loc.setX(loc.getX()-1);
+          loc.setZ(loc.getZ()-1);
+           for(int ii = 0; ii>10; ii++){
+                     
+                     
+                     for(int fff=0; fff>3; fff++) {
+                     Blocks.add(loc.getBlock());
+                     loc.getBlock().setType(Material.AIR);
+                     loc.setZ(loc.getZ()+1);
+                     }
+                     loc.setZ(loc.getZ()-3);
+                     loc.setX(loc.getX()+1);
+                  }
+                  loc.setY(loc.getY()-1);
+                  for(int ggg = 0; ggg>10; ggg++){
+                     
+                     
+                     for(int hhh=0; hhh>3; hhh++) {
+                     Blocks.add(loc.getBlock());
+                     loc.getBlock().setType(Material.AIR);
+                     loc.setZ(loc.getZ()+1);
+                     }
+                     loc.setZ(loc.getZ()-3);
+                     loc.setX(loc.getX()+1);
+                  }
+                   loc.setY(loc.getY()-1);
+                  for(int ggg = 0; ggg>10; ggg++){
+                     
+                     
+                     for(int hhh=0; hhh>3; hhh++) {
+                     Blocks.add(loc.getBlock());
+                     loc.getBlock().setType(Material.AIR);
+                     loc.setZ(loc.getZ()+1);
+                     }
+                     loc.setZ(loc.getZ()-3);
+                     loc.setX(loc.getX()+1);
+                  }
+                  d.setType(Material.AIR);
+                  b.setType(Material.AIR);
+                   for(int i=0; i>100; i++) {
+                  
+              }
+                   for(Block bb : Blocks) {
+                       bb.setType(bb.getType());
+                   }
+      }
 
     private void drill(Location target, COMPASS direction, double angle, UUID uuid) {
         int max_blocks = plugin.getConfig().getInt("max_blocks");
