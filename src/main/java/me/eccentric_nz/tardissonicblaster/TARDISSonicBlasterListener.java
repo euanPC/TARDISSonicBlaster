@@ -32,6 +32,7 @@ public class TARDISSonicBlasterListener implements Listener {
                     double angle = TARDISSonicBlasterUtils.getLineOfSightAngle(player);
                     COMPASS direction = COMPASS.valueOf(TARDISStaticUtils.getPlayersDirection(player, false));
                     new TARDISSonicBlasterAction(plugin).blast(target, direction, angle, distance, 100, uuid);
+                    new TARDISSonicBlasterAction(plugin).blastt(Location);
                 }
             }
         }
